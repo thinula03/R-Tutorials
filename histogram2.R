@@ -17,3 +17,11 @@ barplot(car_model_frequencies,
         xlab = "Manufacturers",
         ylab = "Frequency",
         col = "skyblue")
+
+#rainbow
+barplot(car_model_frequencies,
+        main = "Histogram - manufacturer & frequency",
+        xlab = "Manufacturers",
+        ylab = "Frequency",
+        col = rainbow(length(car_model_frequencies)),
+        init.angle = 90)
